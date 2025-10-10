@@ -4,7 +4,162 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Aditya Kirana And General Store — Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* General layout */
+    .wrap {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .site-header {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .site-header .brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+
+    .site-header nav {
+      float: right;
+    }
+
+    .site-header nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .site-header nav a.cta {
+      background: white;
+      color: #4CAF50;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+    }
+
+    .site-header nav a.active {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p.lead {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero .button {
+      background: #4CAF50;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0;
+    }
+
+    .features article {
+      flex: 1;
+      margin: 0 1rem;
+      background: #e8f5e9;
+      padding: 1rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    /* About preview */
+    .about-preview {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+      align-items: center;
+    }
+
+    .about-preview div {
+      flex: 1;
+    }
+
+    .about-preview img {
+      max-width: 400px;
+      margin-left: 2rem;
+      flex: 1;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #333;
+      color: white;
+      padding: 1.5rem 0;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .site-footer a {
+      color: #f4f4f4;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+      }
+
+      .features article {
+        margin: 1rem 0;
+      }
+
+      .about-preview {
+        flex-direction: column;
+      }
+
+      .about-preview img {
+        margin: 1rem 0 0 0;
+      }
+
+      .site-header nav {
+        float: none;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .site-header nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -49,7 +204,7 @@
         <p>At Aditya Kirana And General Store, we bring you all essentials and household items under one roof. Shop worry-free with us.</p>
         <a href="about.html" class="link">Learn more →</a>
       </div>
-      <img src="placeholder-image.svg" alt="Store photo">
+      <img src="placeholder-image.svg" alt="Store photo" />
     </section>
 
     <section class="testimonials wrap">
